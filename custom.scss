@@ -1,0 +1,116 @@
+/* reset margin, padding - Muốn hiện thị full màn hình */
+body {
+    /* important đè lên tất cả các lệnh */
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Class sẽ bắt đầu bằng dấu [.] */
+.red {
+    /* Tạo viền hộp dày 1px, vạch liền, màu đỏ */
+    border: 1px solid rgb(255, 5, 5);
+}
+
+.green {
+    border: 1px solid green;
+}
+
+.banner {
+    height: 865px;
+    /* Ảnh nền căn giữa, không lặp lại */
+    background: url('./banner.jpg') center center no-repeat;
+    /* Ảnh nền phóng to*/
+    background-size: cover;
+    /* Khoảng cách đệm chữ bên trong thẻ 4 cạnh 5px */
+    padding: 5px;
+
+    .about-sign-in {
+        height: 80px;
+        width: 100%;
+        /* Căn chữ sang phải */
+        text-align: right;
+
+        .about,
+        .sign-in {
+            /* Tạo khoảng cách chữ với bên ngoài thẻ, phía trên */
+            margin-top: 30px;
+            padding: 7px 15px;
+            /* Gạch chân giá trị none: không có gì */
+            text-decoration: none;
+            /* Cho phép thay đổi chiều cao và rộng của thẻ */
+            display: inline-block;
+            /* Chuyển chữ in hoa */
+            text-transform: uppercase;
+        }
+
+        .sign-in {
+            /* Tạo khoảng cách chữ với bên ngoài thẻ, bên phải */
+            margin-right: 120px;
+            margin-left: 25px;
+            /* Tạo đường viền bo tròn */
+            border-radius: 20px;
+            border: 1px solid green;
+        }
+    }
+
+    .logo {
+        background: url('./hapoERP.png') center center no-repeat;
+        margin-top: 80px;
+        height: 100px;
+    }
+
+    .content-center {
+
+        .left,
+        .center,
+        .right {
+            /* Chiều rộng mỗi class 33%/tổng */
+            width: 33%;
+            display: inline-block;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        span {
+            // Xuống dòng ko đứng cạnh icon
+            display: block;
+            font-size: 30px;
+            padding-top: 5px;
+            margin-top: 10px;
+        }
+
+        img {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    .text {
+        text-align: center;
+        margin-top: 30px;
+        height: 20px;
+        font-size: 15px;
+        font-family: Roboto;
+        font-style: italic;
+        color: #429321;
+    }
+
+    .btn-start-now {
+        text-align: center;
+
+        button {
+            text-transform: uppercase;
+            padding: 10px 15px;
+            border-radius: 20px;
+            border: 1px solid green;
+            margin-top: 25px;
+            background: linear-gradient(311.12deg, #B4EC51 0%, #429321 100%);
+            color: azure;
+            letter-spacing: 1.33px;
+            /* Khi di chuột vào hiện bàn tay */
+            cursor: pointer;
+        }
+    }
+
+}
